@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "bib": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false,
+      "nativeDebugging": true
+    }
+  }
+}
