@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -61,6 +62,7 @@
             this.has.Name = "has";
             this.has.Size = new System.Drawing.Size(220, 27);
             this.has.TabIndex = 2;
+            this.has.TextChanged += new System.EventHandler(this.has_TextChanged);
             // 
             // label1
             // 
@@ -90,12 +92,25 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Biblioteka szkolna";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(537, 184);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(69, 24);
+            this.checkBox1.TabIndex = 6;
+            this.checkBox1.Text = "Pokaż";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Login
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -113,10 +128,11 @@
         #endregion
 
         private Button button1;
-        private TextBox log;
         private TextBox has;
         private Label label1;
         private Label label2;
         private Label label3;
+        private TextBox log;
+        private CheckBox checkBox1;
     }
 }
